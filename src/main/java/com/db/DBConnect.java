@@ -11,7 +11,7 @@ public class DBConnect {
 	        String dbURL = "jdbc:mysql://localhost:3306/"; 
 			String dbName = "hospital"; 
 	        String dbUsername = "root"; 
-	        String dbPassword = "Sandeep@123"; 
+	        String dbPassword = ""; 
 	  
 	        Class.forName(dbDriver); 
 	        conn = DriverManager.getConnection(dbURL+dbName,dbUsername,dbPassword); 

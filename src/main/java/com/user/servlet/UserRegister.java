@@ -27,7 +27,7 @@ public class UserRegister extends HttpServlet {
 			 UserDao dao=new
 			 UserDao(DBConnect.getConn()); 
 			 boolean f=dao.register(u); if(f) {
-			 System.out.println("Register Successfully"); }else {
+			 System.out.println("Register Successfully"); response.sendRedirect("user_login.jsp");}else {
 			 System.out.println("Somthing Error"); }
 			 
 		}catch(Exception e) {
